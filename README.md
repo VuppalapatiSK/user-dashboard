@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+**TITLE**
+Simple User Management dashboard Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Description**
+This project is a simple CRUD (Create, Read, Update, Delete) operations implementation. This project provides a clear and concise example of how to perform CRUD operations.
 
-## Available Scripts
+**Key Features**
+* Create new records.
+* Read existing records.
+* Update records.
+* Delete records.
 
-In the project directory, you can run:
+  **Project Setup**
+# install project
+$ git clone https://github.com/rahulfaujdar/react-crud-application.git
+# open app directory
+$ cd react-crud-application
+# install dependencies
+$ npm i || npm install
+# start
+$ npm start
 
-### `npm start`
+**Implementation Details**
+1. Setting Up React Components  
+Created separate components for each CRUD operation (Create, Read, Update, Delete).
+Used functional components,
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Managing State
+Utilize React-redux tool state to manage data.
+Maintain state for storing records or items to be manipulated.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Create (Add) Operation
+Implement a form component to capture input data.
+Handle form submission to create new records.
+Update state with the newly created record.
 
-### `npm test`
+4. Read Operation
+Display existing records in a table format.
+Fetch data from state and render it within the component.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Update Operation
+Can be edited by clicking on the record
+Implemented an edit feature to modify existing records.
+Display an editable form populated with record details.
+Update state with the edited record upon submission.
 
-### `npm run build`
+6. Delete Operation
+Provided button on every record to delete records.
+Implemented a confirmation dialog for deletion.
+can be removed the deleted record from the state.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+7. Routing
+Used React Router for client-side routing .
+Defined routes for each CRUD operation and manage navigation.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+8. Styling and UI
+Applied styling frameworks ( Bootstrap) for a visually appealing UI.
